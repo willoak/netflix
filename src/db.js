@@ -54,5 +54,22 @@ export default {
                 items: await basicFetch(`/discover/movie?with_genres=99&${LANGUAGE_APIKEY}`)
             },
         ]
+    },
+    getMovieInfo: async (movieId,type) => {
+        let info = {};
+        if(movieId) {
+            switch(type) {
+                case 'movie':
+                    info = await basicFetch(`/movie/${movieId}?${LANGUAGE_APIKEY}`)
+                    break;
+                case 'tv':
+                    info = await basicFetch(`/tv/${movieId}?${LANGUAGE_APIKEY}`);
+                    break;
+                default:
+                    info = null;
+                    break;
+            }
+        }
+        return info;
     }
 }

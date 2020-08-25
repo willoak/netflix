@@ -3,10 +3,6 @@ import './filmesItem.css';
 
 const FilmesItem = ({title, items}) => {
 
-    let tamanho = document.querySelector(".movie-item");
-
-    console.log( tamanho )
-
     return (
         <div className="movie-row">
             <h2>{title}</h2>
