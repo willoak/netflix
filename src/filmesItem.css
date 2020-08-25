@@ -1,0 +1,26 @@
+.movie-row {
+    margin-bottom: 30px;
+}
+.movie-row h2 {
+    margin: 10px 0 10px 30px;
+}
+.movie-area {
+    overflow-x: hidden;
+}
+.movie-list {
+    width: 9999999px;
+    margin-left: 30px;
+}
+.movie-item {
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
+.movie-item img {
+    max-width: 100%;
+    transform: scale(.9);
+    transition: all ease .2s;
+}
+.movie-item img:hover {
+    transform: scale(1);
+}
